@@ -375,7 +375,6 @@ p a{
     position: absolute;
     right: -100vw;
     width: 90vw;
-    height: 80vh;
     transition: all .5s;
 }
 .sidebar ul{
@@ -401,7 +400,7 @@ div[class="sidebar"] a{
 label #btn,label #cancel{
     display: none;
     right: 0vw;
-    width: 80vw;
+    width: 10vw;
     text-align: end;
     position: absolute;
     cursor: pointer;
@@ -430,9 +429,12 @@ label #cancel{
 }
 @media screen and (max-width: 1500px) {
     label #btn{
-        margin: 1vw 2vw 0 0;
+        color: #105652;
+        font-size: 5vw;
+        margin: 2vw 2vw 0 0;
         position: fixed;
         display: block;
+        width: 5vw;
         z-index: 6;
         right: 0;
     }
@@ -440,20 +442,235 @@ label #cancel{
         right: 0;
     }
     .sidebar{
+        background-color: #fff;
         position: fixed;
+        height: 100vh;
         display: block;
         text-align: start;
+        font-size: 5vw;
         z-index: 4;
     }
     label #cancel{
-        margin: 1vw 2vw 0 0;
+        color: #105652;
+        font-size: 5vw;
+        margin: 2vw 2vw 0 0;
         display: block;
         position: fixed;
         z-index: 6;
-        right: -5vw;
+        right: -10vw;
     }
     .itemcontainer{
         display: none;
     }
-    
+    div[class="sidebar"] ul{
+        padding-top: 10vw;
+    }
+    div[class="sidebar"] a{
+    white-space: wrap;
+    padding-top: 4vh;
+    padding-left: 3vw;
+    display: block;
+    color: #105652;
+    font-size: 3vw;
+    height: 5vh;
+    line-height: 1vw;
+    border-top: 1px solid white;
+    border-bottom:1px solid darkgray ;
+    background-color: #fff;
+    }
+    .navbar{
+        height: 10vw;
+    }
+    .name{
+        padding-top: 1vw;
+        font-size: 5vw;
+    }
+    .introbox{
+        height: 100vh;
+    }
+    .introbox1{
+        position: absolute;
+        top: 15vh;
+        left: 5vw;
+        font-size: 7vw;
+    }
+    .introbox2{
+        position: absolute;
+        top: 22vh;
+        left: 5vw;
+        font-size: 7vw;
+        font-weight: 500;
+    }
+    .introbox3{
+        position: absolute;
+        top: 35vh;
+        left: 5vw;
+        font-size: 5vw;
+    }
+    .glowbutton{
+        padding-top: 1vh;
+        height: 5vh;
+        position: absolute;
+        top: 40vh;
+        left: 5vw;
+        font-size: 3.5vw;
+        border-radius: 10px;
+    }
+    .introbox4{
+        margin: 3vw 5vw 0 0;
+        width: 33vw;
+    }
+    .introbox5{
+        left: 44vw;
+        margin: 3vw 5vw 0 0;
+        width: 33vw;
+    }
+    .introbox6{
+        position: absolute;
+        top: 52.5vh;
+        left: -40vw;
+    }
+    div[class="introbox6"] img{
+        position: absolute;
+        display: block;
+        width: 60vw;
+        height: 45vh;
+    }
+    #about{
+        border-radius: 10px;
+        height: 100vh;
+        display: block;
+    }
+    .about1{
+        font-size: 4vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .underline{
+        width: 20vw;
+        font-size: 4vw;
+        margin: 0;
+        padding:0;    
+    }
+    .about3 p{
+        position: relative;
+        left: -40vw;
+        font-size: 4vw;
+        line-height: 3vh;
+        margin: 0;
+        padding: 0;
+        width: 85vw;
+        height: 20vh;
+    }
+    .about4 img{
+        width: 65vw;
+        margin-left: 7vw;
+    }
+    .about5{
+        position: absolute;
+        top: 82vh;
+        font-size: 4vw;
+        left: 10vw;
+        width: 60vw;
+        height: 20vh;
+    }
+    .about5 i{
+        margin-top: 3vh;
+        font-size: 6vw;
+    }
+    #portfolio{
+        display: none;
+    }
+    #resume{
+        display: block;
+        line-height: 5vh;
+        height: 100vh;
+        font-size: 4vw;
+    }
+    .normaltext,.resume6items1{
+        padding-bottom: 10vh;
+        font-weight: 500;
+        font-size: 3vw;
+    }
+    .coursebutton{
+        font-size: 3vw;
+        width: 25vw;
+        height: 5vh;
+    }
+    .resume1{
+        font-size: 5vw;
+    }
+    .resume2{
+        margin-left: 30vw;
+    }
+    .resume3, .resume5{
+        font-size: 4vw;
+    }
+    .button1{
+        position: absolute;
+        left: 0vw;
+        top: 8vh;
+    }
+    .button2{
+        position: absolute;
+        left: 0vw;
+        top: 8vh;
+    }
+    .resume6items2{
+        position: absolute;
+        left: 0;
+        top: 10vh;
+    }
+    .contactitem1{
+        font-size: 5vw;
+    }
+    .contactitem2{
+        margin-left: 35vw;
+        width: 28vw;
+    }
+    .contactcontainer{
+        display: block;
+        width: 90vw;
+    }
+    .contactbox1{
+        font-size: 3.5vw;
+        width: 85vw;
+        height: 60vh;
+    }
+    .contactbox1item1{
+        font-size: 5vw;
+        padding-bottom: 7vh;
+    }
+    .contactbox2{
+        width: 85vw;
+        height: 90vh;
+    }
+    .formhead{
+        font-size: 5vw;
+        padding-bottom: 7vh;
+    }
+    form[class="contactform"] label{
+        line-height: 7vh;
+        font-size: 3vw;
+        color: rgb(43, 36, 36);
+    }
+    .inputbox{
+        width: 50vw;
+        height: 5vh;
+    }
+    #message{
+        width: 50vw;
+        height: 10vh;
+    }
+    .submitbutton{
+        margin-top: 7vh;
+        width: 35vw;
+        height: 5vh;
+        font-size: 3.5vw;
+    }
+    .footer{
+        font-size: 3.5vw;
+        height: 5vh;
+    }
 }
