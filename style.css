@@ -660,6 +660,7 @@ label #cancel{
         height: 5vh;
     }
     #message{
+        font-size: 2.5vw;
         width: 50vw;
         height: 10vh;
     }
